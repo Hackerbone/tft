@@ -17,7 +17,8 @@ a{
 .not-clicked{
     position: fixed;
     padding: 0.7rem;
-    background-color: #EA9478;
+    background-color: #1B737E;
+    color: #e6f1ff;
     width: 100%;
     display: flex;
     align-self:center;
@@ -44,6 +45,7 @@ a{
 
 .right-float span{
     padding: 1rem;
+    color: #e6f1ff;
 }
 
 .dropdown{
@@ -61,7 +63,8 @@ a{
     justify-content: center;
     width:100%;
     height:100%;
-    background-color:#DFC8C0;
+    background-color:ddf3f5;
+     color: black;
     flex-direction: column;
 }
 #hero-container h1{
@@ -79,16 +82,16 @@ a{
     margin: 2rem;
     width: 15rem;
     height: 3rem;
-    border: 2px solid rgba(252, 124, 124, 1);
-    background-color: rgba(252, 124, 124, 1) ;
+    border: 2px solid #58989A;
+    background-color: #58989A ;
     color:white;
     transition: ease-in-out 0.2s all;
     font-size:1.1rem;
 }
 
 .button:hover{
-    background-color:rgb(245, 227, 227);
-    color: rgba(252, 124, 124, 1);
+    background-color:#ddf3f5;
+    color: #58989A;
 
 }
 @media only screen and (max-width: 1200px) {
@@ -102,7 +105,8 @@ a{
     .clicked{
     position: fixed;
     padding: 0.7rem;
-    background-color: #EA9478;
+    background-color: #1B737E;
+    color: #e6f1ff;
     width: 100%;
     display: flex;
     align-self:center;
@@ -125,7 +129,7 @@ a{
 
     }
     #dropdown a:hover{
-        background-color: #DFC8C0;
+        background-color: #58989A;
         font-size: 110%;
     }
     .open{
@@ -169,12 +173,12 @@ a{
     #a-close:hover{
         transform: scale(1.2);
     }
-      #dropdown{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+    #dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
     #navbar{
         flex-direction: column;
         padding-top: 1rem;
@@ -184,6 +188,7 @@ a{
     }
 
 
+   
      /* hero media queries */
      #hero-container h1{
         font-size: 3rem;
