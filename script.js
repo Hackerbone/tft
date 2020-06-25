@@ -6,10 +6,6 @@ $(document).ready(function () {
         $("#navbar").addClass("clicked");
         $("#addclass").addClass("close");
         $("#dropdown").removeClass("dropdown");
-        for(var i=0;i<7;i++){
-            var hrt = "#hr" + i;
-            $(hrt).addClass("hr");
-        }
     });
 
     $("#a-close").click(function () {
@@ -18,10 +14,6 @@ $(document).ready(function () {
         $("#addclass").removeClass("close");
         $("#navbar").addClass("not-clicked");
         $("#navbar").removeClass("clicked");
-        for (var i = 0; i < 7; i++) {
-            var hrt = "#hr" + i;
-            $(hrt).removeClass("hr");
-        }
     });
     
 });
