@@ -11,12 +11,14 @@ body,html{
 
 a{
   text-decoration: none;
+    color:black;
 }
-
+/*start of Navbar*/
 .not-clicked{
     position: fixed;
     padding: 0.7rem;
-    background-color: #EA9478;
+    background-color: #1B737E;
+    color: #e6f1ff;
     width: 100%;
     display: flex;
     align-self:center;
@@ -43,17 +45,68 @@ a{
 
 .right-float span{
     padding: 1rem;
+    color: #e6f1ff;
 }
 
+.dropdown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+}
+/*End of Navbar*/  
 
-@media only screen and (max-width: 1000px) {
+/* Hero-container */
+#hero-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    background-color:ddf3f5;
+     color: black;
+    flex-direction: column;
+}
+#hero-container h1{
+    font-size: 4rem;
+}
+
+#hero-container p{
+    font-size: 1.5rem;
+}
+
+#hero-container p,#hero-container h1{
+    padding: 1rem;
+}
+.button{
+    margin: 2rem;
+    width: 15rem;
+    height: 3rem;
+    border: 2px solid #58989A;
+    background-color: #58989A ;
+    color:white;
+    transition: ease-in-out 0.2s all;
+    font-size:1.1rem;
+}
+
+.button:hover{
+    background-color:#ddf3f5;
+    color: #58989A;
+
+}
+@media only screen and (max-width: 1200px) {
     #navbar .right-float .dropdown{
         display: none;
     }
+    .right-float{
+    width: 100%;
+    margin-top: 1rem;
+}
     .clicked{
     position: fixed;
     padding: 0.7rem;
-    background-color: #EA9478;
+    background-color: #1B737E;
+    color: #e6f1ff;
     width: 100%;
     display: flex;
     align-self:center;
@@ -61,7 +114,24 @@ a{
     height: auto;
     padding-top:2.5rem;
 }
+    #dropdown{
+        margin-top:1rem;
+        width:100%;
+        margin-left: 1.5rem;
+    }
+    #dropdown a{
+        display: flex;
+        align-self:center;
+        font-weight: bolder;
+        justify-content: center;
+        width:100%;
+        font-size: 1.1rem;
 
+    }
+    #dropdown a:hover{
+        background-color: #58989A;
+        font-size: 110%;
+    }
     .open{
         background: url('open.png');
         height: 1rem;
@@ -103,25 +173,37 @@ a{
     #a-close:hover{
         transform: scale(1.2);
     }
-      #dropdown{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+    #dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
     #navbar{
         flex-direction: column;
+        padding-top: 1rem;
+        padding-left:0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
-     
+
+
+   
+     /* hero media queries */
+     #hero-container h1{
+        font-size: 3rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 430px) {
+      #hero-container h1{
+        font-size: 2rem;
+    }
+    #hero-container p{
+        font-size: 1rem;
+    }
 
 }
 /* End of media Query */
-
-
-  .dropdown{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-}
-    
