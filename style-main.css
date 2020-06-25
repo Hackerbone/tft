@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo',  Arial, Helvetica, sans-serif;
+}
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+
+a{
+  text-decoration: none;
+}
+
+.not-clicked{
+    position: fixed;
+    padding: 0.7rem;
+    background-color: #EA9478;
+    width: 100%;
+    display: flex;
+    align-self:center;
+    justify-content: flex-end;
+    height: 2.5rem;
+}
+
+#navbar .big{
+    position: absolute;
+    left:7%;
+    top:0.7rem;
+    font-size: 1.75rem;
+    font-weight: bolder;
+}
+
+#navbar .right-float{
+    display: flex;
+    align-self:center;
+    float: right;
+    font-weight: bolder;
+    font-size:1.1rem;
+    margin-right: 1.5rem;
+}
+
+.right-float span{
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #navbar .right-float .dropdown{
+        display: none;
+    }
+   
+    .clicked{
+    position: fixed;
+    padding: 0.7rem;
+    background-color: #EA9478;
+    width: 100%;
+    display: flex;
+    align-self:center;
+    justify-content: space-evenly;
+    height: auto;
+    padding-top:2.5rem;
+}
+
+    .open{
+        background: url('chem2.png');
+        height: 1rem;
+        width: 0.8rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: ease-in-out all 0.2s;
+    }
+    .close{
+        background: url('close.png'); 
+        height: 1rem;
+        width: 1rem; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: ease-in-out all 0.2s ;
+    }
+    #a-open{
+        position: absolute;
+        top:30%;
+        right:16%;
+        transition: ease-in-out all 0.2s ;
+    }
+    #a-open:hover{
+        transform: scale(1.2);
+    }
+    #a-close{
+        position: absolute;
+        top:4%;
+        right:8%;
+        transition: ease-in-out all 0.2s ;
+    }
+    #a-close:hover{
+        transform: scale(1.2);
+    }
+      #dropdown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    #navbar{
+        flex-direction: column;
+    }
+  
+
+}
+/* End of media Query */
+
+
+  .dropdown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+}
+    
