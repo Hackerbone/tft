@@ -46,11 +46,10 @@ a{
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     #navbar .right-float .dropdown{
         display: none;
     }
-   
     .clicked{
     position: fixed;
     padding: 0.7rem;
@@ -71,6 +70,11 @@ a{
         background-repeat: no-repeat;
         background-size: cover;
         transition: ease-in-out all 0.2s;
+    }
+    .hr{
+        height:2px;
+        width: 90%;
+        background-color: black;
     }
     .close{
         background: url('close.png'); 
@@ -108,7 +112,7 @@ a{
     #navbar{
         flex-direction: column;
     }
-  
+     
 
 }
 /* End of media Query */
