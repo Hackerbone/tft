@@ -23,7 +23,7 @@ a{
 .not-clicked{
     position: fixed;
     padding: 0.7rem;
-    background-color: #1B737E;
+    background-color: 	#e65c6f;
     color: #e6f1ff;
     width: 100%;
     display: flex;
@@ -78,8 +78,7 @@ a{
     justify-content: center;
     width:100%;
     height:100%;
-    background-color:#def6f5;
-    color: white;
+    color: black;
     flex-direction: column;
     background-attachment: fixed;
 
@@ -87,49 +86,33 @@ a{
 #hero-container h1{
     font-size: 4rem;
     background-attachment: fixed;
-    text-shadow: 1px 1px 0px black, 
-                2px 2px 0 #58989A,
-                3px 3px 0 #A8B8B7,
-                4px 4px 0px #1B737E, 
-                5px 5px 0px #58989A,
-                6px 6px 0px #A8B8B7;
-  
+
 }
 
-#hero-container h1:hover{
-    text-shadow: 1px 1px 1px #EA9478, 
-                2px 2px 0 #F2B69E,
-                3px 3px 0 #DFC8C0,
-                4px 4px 1px #EA9478, 
-                5px 5px 0px #F2B69E,
-                6px 6px 0px #DFC8C0;
-}
+
 #hero-container p{
     font-size: 1.5rem;
     background-attachment: fixed;
-    text-shadow: 1px 1px 1px #1B737E, 
-                2px 2px 0 #58989A,
-                3px 3px 0 #A8B8B7;
 }
 
 #hero-container p,#hero-container h1{
     padding: 1rem;
 }
 .button{
-    margin: 2rem;
+    margin-top: 1rem;
     width: 15rem;
     height: 3rem;
-    border: 2px solid #58989A;
-    background-color: #58989A ;
+    border: 2px solid 	#e65c6f;
+    background-color: 	#e65c6f ;
     color:white;
-    transition: ease-in-out 0.2s all;
+    transition: ease-in-out 0.1s all;
     font-size:1.1rem;
     background-attachment: fixed;
 }
 
 .button:hover{
-    background-color:#ddf3f5;
-    color: #58989A;
+    opacity: 0.78;
+    color: 	white;
 
 }
 
@@ -137,7 +120,7 @@ a{
 
 #whats-new{
     width: 100%;
-    background-color: #EA9478;
+    background-color: #ffcb69;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -148,7 +131,7 @@ a{
 }
 
 #whats-new h1{
-    color:white;
+    color: black;
     padding: 2rem;
     z-index: 0;
     font-size: 3rem;
@@ -176,7 +159,6 @@ a{
  /* About */
 #about{
     width: 100%;
-    background-color:black;
     color:white;
     display: flex;
     align-items: center;
@@ -191,10 +173,10 @@ a{
     height: 15rem;
     text-align: center;
     font-size: 1.3rem;
-    background:#58989A;
+    background:rgb(225, 121, 121);
 }
 #about .section:nth-child(even){
-    background-color:#1B737E;
+    background-color:	#e65c6f;
     grid-template-columns: 2fr 1fr;
 }
 #about .section:nth-child(1){
@@ -231,7 +213,7 @@ a{
 /* Counter Start */
 #counter{
     width: 100%;
-    background-color: #EA9478;
+    background-color: #f98d77;
     display: flex;
     align-self: center;
     justify-content: space-around;
@@ -250,7 +232,7 @@ a{
 
 /* Blog */
 #blog{
-    background-color: #F2B69E;
+    background-color: 	#ffcb69;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,8 +265,9 @@ a{
     display: flex;
     padding-top: 4.5rem;
     padding-bottom: 2rem;
+    color: white;
     width: 100%;
-    background-color: #DFC8C0;
+    background-color: 	rgb(225, 121, 121);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -311,13 +294,13 @@ a{
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
-    background-color: royalblue;
+    background-color: white;
     transition: 0.3s ease-in-out all;
 }
 
 #footer{
     font-size: 1.4rem;
-    background-color: #1B737E;
+    background-color: #e65c6f;
     color:white;
     display: flex;
     justify-content: space-around;
@@ -364,7 +347,7 @@ a{
     .clicked{
     position: fixed;
     padding: 0.7rem;
-    background-color: #1B737E;
+    background-color: #e65c6f;
     color: #e6f1ff;
     width: 100%;
     display: flex;
@@ -388,7 +371,7 @@ a{
 
     }
     #dropdown a:hover{
-        background-color: #58989A;
+        background-color: rgb(249, 177, 177);
         font-size: 110%;
     }
     .open{
@@ -447,6 +430,13 @@ a{
     /* hero media queries */
      #hero-container h1{
         font-size: 3rem;
+    }
+
+    #button-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     /* Whats new media queries */
